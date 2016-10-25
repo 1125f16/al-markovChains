@@ -36,7 +36,14 @@ var intial_vector = [0,1,0,0];
 
 var scalar_result = math.multiply(intial_vector,multiply_matrix_result);
 
-print("Vector Multiplication [0,1,0,0] : ");
+print("Vector Multiplication (staring condition 25) : ");
+print(scalar_result);
+
+var intial_vector = [0,0,1,0];
+
+var scalar_result = math.multiply(intial_vector,multiply_matrix_result);
+
+print("Vector Multiplication (staring condition 50) : ");
 print(scalar_result);
 
 
