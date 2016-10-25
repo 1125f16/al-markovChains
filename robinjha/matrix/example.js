@@ -26,7 +26,7 @@ print(clone);
 
 // matrix multiplication
 console.log('matrix multiplication');
-var result = Math.pow(math.multiply(p, p),10);
+//var result = Math.pow(math.multiply(p, p),10);
 //var blah = math.multiply(p,p);
 //var result = Math.pow(blah,10);
 var result = power(50,p);
