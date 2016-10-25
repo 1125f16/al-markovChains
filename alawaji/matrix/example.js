@@ -28,8 +28,10 @@ var p10 = math.matrix([[1, 0, 0, 0],
 					 [0, 0, 0, 1]]);
 // print(p10);
 
+print("Result using Math Power built-in function");
 print(math.pow(p10, 10));
 
+print("Result using written function");
 print(power(50, p10));
 
 var v1 = math.matrix([0, 0, 1, 0]);
@@ -48,6 +50,7 @@ var result2 = math.pow(p10, 50);
 var mat2 = math.matrix([0, 0, 1, 0]);
 var result3 = math.multiply(mat2,result2);
 
+print("Result of multiplying matrix with initial state");
 print(result3);
 
 function print (value) {
