@@ -1,5 +1,4 @@
-//programming for matrix ^ 50
-
+//programming for starting at $25
 
 // load math.js
 var math = require('./math.js');
@@ -9,6 +8,8 @@ var p = math.matrix([[1, 0, 0, 0],
 					 [0.5,0,0.5,0],
 					 [0,0.5,0,0.5],
 					 [0,0,0,1]]);
+
+var v=math.matrix([0,1,0,0]);
 print(p);
 
 // the matrix can be retrieved using valueOf()
@@ -21,20 +22,8 @@ print(p);
 //var clone = p.clone();
 //print(clone);
 
-// matrix multiplication
+ //matrix multiplication
 console.log('matrix multiplication');
-p1=p;
-for (i=1;i<11;i++)
-{
-	i=i+1;
-var p1 = math.multiply(p, p1);
-
-}
-var p2=math.pow(p,10);
-//print(p);
-print(p1);
-print(p2);
-
 
 function power (x,matrix){
 	var result=math.multiply(matrix,matrix);
@@ -45,8 +34,13 @@ function power (x,matrix){
 	return result;
 }
 
-var markov=power(10,p);
-print(markov);
+var markov=power(50,p);
+
+//var markov=math.pow(p,50);
+
+var res=math.multiply(v,markov);
+print(res);
+
 function print (value) {
   var precision = 3;
  console.log(math.format(value, precision));
