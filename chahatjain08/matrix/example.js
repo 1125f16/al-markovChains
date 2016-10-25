@@ -13,6 +13,17 @@ var clone = p.clone();
 
 var multiply_matrix_result = p;
 
+for (var i=1; i<25 ; i++)
+{
+	multiply_matrix_result = math.multiply(p,multiply_matrix_result);
+}
+
+console.log('matrix multiplication ' + i + ' times');
+print(multiply_matrix_result);
+
+
+var multiply_matrix_result = p;
+
 for (var i=1; i<50 ; i++)
 {
 	multiply_matrix_result = math.multiply(p,multiply_matrix_result);
