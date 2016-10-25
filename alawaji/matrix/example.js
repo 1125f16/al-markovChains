@@ -26,7 +26,7 @@ var p10 = math.matrix([[1, 0, 0, 0],
 					 [0.5, 0, 0.5, 0], 
 					 [0, 0.5, 0, 0.5],
 					 [0, 0, 0, 1]]);
-print(p10);
+// print(p10);
 
 print(math.pow(p10, 10));
 
@@ -44,6 +44,11 @@ for(var i=0; i<x; i++){
 return result;
 }
 
+var result2 = math.pow(p10, 50);
+var mat2 = math.matrix([0, 0, 1, 0]);
+var result3 = math.multiply(mat2,result2);
+
+print(result3);
 
 function print (value) {
   var precision = 3;
